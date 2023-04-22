@@ -24,9 +24,9 @@ def rec_g(n):
 def iter_f(n):
     gn = [1] * (n + 1)
     fn = [1] * (n + 1)
-    for i in range(3, n + 1):
-        fn[i] = 3 * fn[i - 1] - 3 * gn[i - 1]
-        gn[i] = fn[i - 1] + 2 * gn[i - 1]
+    for m in range(3, n + 1):
+        fn[m] = 3 * fn[m - 1] - 3 * gn[m - 1]
+        gn[m] = fn[m - 1] + 2 * gn[m - 1]
     return fn[n]
 
 try:
